@@ -1,13 +1,13 @@
 #作成者：田村　和広
 #barabshi-albertネットワークの作成練習
-#nx.barabasi_albert_graph(ノード数,ノード追加時のリンク数)
+#nx.balanced_tree(分化数,深さ)
 
 import networkx as nx
 import matplotlib.pyplot as plt
 
 def main():
     G= nx.Graph()
-    G=nx.barabasi_albert_graph(100,2)
+    G=nx.balanced_tree(2,5)
     figure_out(G)
 
 def figure_out(G):
